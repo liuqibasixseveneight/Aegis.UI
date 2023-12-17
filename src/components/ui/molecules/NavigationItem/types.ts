@@ -18,6 +18,9 @@ type HeaderItem = {
   messages?: number;
 };
 
-export type ListItem = LinkItem | HeaderItem;
+type ListItem = LinkItem | HeaderItem;
 
-export type SidenavProps = {};
+export type NavigationItemProps = {
+  item: ListItem;
+  isActive?: boolean;
+};

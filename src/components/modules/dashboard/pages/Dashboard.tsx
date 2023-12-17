@@ -28,6 +28,10 @@ const Dashboard: FC<DashboardProps> = () => {
           top={6}
           left={6}
           onClick={() => null}
+          _hover={{
+            background: 'gray.300',
+            borderColor: 'transparent',
+          }}
         />
         <Text fontSize={100} color='gray.300'>
           Dashboard

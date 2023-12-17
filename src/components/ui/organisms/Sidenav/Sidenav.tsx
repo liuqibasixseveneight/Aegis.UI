@@ -2,7 +2,8 @@ import { type FC } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 
 import { SidenavProps } from './types';
-import { LogoSearch } from '../../../ui';
+import { AvatarBox, LogoSearch, Navigation, SwitchButtons } from '../../../ui';
+import { listItems } from './listItems';
 
 const Sidenav: FC<SidenavProps> = () => {
   return (
@@ -22,7 +23,11 @@ const Sidenav: FC<SidenavProps> = () => {
         <>
           <Box w='full'>
             <LogoSearch />
+            <SwitchButtons />
+            <Navigation listItems={listItems} />
           </Box>
+
+          <AvatarBox />
         </>
       </Flex>
     </>
