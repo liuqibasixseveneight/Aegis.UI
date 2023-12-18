@@ -6,4 +6,5 @@ type UserConfiguration = {
 
 export type AvatarBoxProps = {
   userConfiguration: UserConfiguration;
+  isOpen: boolean;
 };

@@ -1,1 +1,3 @@
-export type LogoProps = {};
+export type LogoProps = {
+  isOpen: boolean;
+};

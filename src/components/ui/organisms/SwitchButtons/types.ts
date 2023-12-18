@@ -1,1 +1,3 @@
-export type SwitchButtonsProps = {};
+export type SwitchButtonsProps = {
+  isOpen: boolean;
+};

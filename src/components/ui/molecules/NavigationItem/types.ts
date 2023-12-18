@@ -1,8 +1,8 @@
-import { IconProps } from '@chakra-ui/react';
-import { ComponentType, ReactElement } from 'react';
+import { IconProps } from "@chakra-ui/react";
+import { ComponentType, ReactElement } from "react";
 
 type LinkItem = {
-  type: 'link';
+  type: "link";
   label: string;
   path: string;
   icon: ReactElement | ComponentType<IconProps>;
@@ -11,7 +11,7 @@ type LinkItem = {
 };
 
 type HeaderItem = {
-  type: 'header';
+  type: "header";
   label: string;
   icon?: ReactElement | ComponentType<IconProps>;
   notifications?: number;
@@ -22,5 +22,6 @@ type ListItem = LinkItem | HeaderItem;
 
 export type NavigationItemProps = {
   item: ListItem;
+  isOpen: boolean;
   isActive?: boolean;
 };
