@@ -1,42 +1,22 @@
-import { type FC } from 'react';
-import { Flex, HStack, IconButton, Text } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { type FC, useState } from 'react';
+import { HStack } from '@chakra-ui/react';
 
 import { DashboardProps } from '../types';
 import { Sidenav } from '../../../ui';
+import { DashboardMain } from '../containers';
 
 const Dashboard: FC<DashboardProps> = () => {
+  const [isSidenavOpen, setIsSidenavOpen] = useState<boolean>(true);
+
   return (
     <HStack w='full' h='100vh' bg='gray.100' padding={10}>
-      <Sidenav />
+      <Sidenav isOpen={isSidenavOpen} />
 
-      <Flex
-        as='main'
-        w='full'
-        h='full'
-        bg='white'
-        alignItems='center'
-        justifyContent='center'
-        flexDirection='column'
-        position='relative'
-        borderRadius='3xl'
-      >
-        <IconButton
-          aria-label='Menu Collapse'
-          icon={<HamburgerIcon />}
-          position='absolute'
-          top={6}
-          left={6}
-          onClick={() => null}
-          _hover={{
-            background: 'gray.300',
-            borderColor: 'transparent',
-          }}
-        />
-        <Text fontSize={100} color='gray.300'>
-          Dashboard
-        </Text>
-      </Flex>
+      <DashboardMain
+        setIsSidenavOpen={() =>
+          setIsSidenavOpen((isSidenavOpen) => !isSidenavOpen)
+        }
+      />
     </HStack>
   );
 };

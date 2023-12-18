@@ -2,9 +2,9 @@ import { type FC } from 'react';
 import { Box, Flex, Icon, IconButton, Text } from '@chakra-ui/react';
 import { AtSignIcon, SearchIcon } from '@chakra-ui/icons';
 
-import { LogoSearchProps } from './types';
+import { LogoProps } from './types';
 
-const LogoSearch: FC<LogoSearchProps> = () => {
+const Logo: FC<LogoProps> = () => {
   return (
     <Flex
       w='full'
@@ -32,4 +32,4 @@ const LogoSearch: FC<LogoSearchProps> = () => {
   );
 };
 
-export default LogoSearch;
+export default Logo;

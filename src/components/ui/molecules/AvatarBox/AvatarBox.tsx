@@ -4,7 +4,9 @@ import { SettingsIcon } from '@chakra-ui/icons';
 
 import { AvatarBoxProps } from './types';
 
-const AvatarBox: FC<AvatarBoxProps> = () => {
+const AvatarBox: FC<AvatarBoxProps> = ({ userConfiguration }) => {
+  const { displayName, email } = userConfiguration;
+
   return (
     <Flex
       borderWidth={1}
@@ -26,10 +28,10 @@ const AvatarBox: FC<AvatarBoxProps> = () => {
         alignItems='flex-start'
       >
         <Text fontSize='sm' fontWeight='bold' pb={0} lineHeight={0}>
-          Aegis
+          {displayName}
         </Text>
         <Text as='small' color='gray.500' fontSize={12} lineHeight={0}>
-          aegis@contact.com
+          {email}
         </Text>
       </Flex>
 

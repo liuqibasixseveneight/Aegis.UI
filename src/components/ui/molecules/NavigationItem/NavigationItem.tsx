@@ -39,6 +39,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ item, isActive }) => {
               colorScheme='yellow'
               w={6}
               textAlign='center'
+              ml='auto'
             >
               {notifications}
             </Badge>
@@ -49,6 +50,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ item, isActive }) => {
               colorScheme='green'
               w={6}
               textAlign='center'
+              ml='auto'
             >
               {messages}
             </Badge>

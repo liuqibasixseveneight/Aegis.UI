@@ -1,11 +1,13 @@
+import { SidenavToggle } from './atoms';
 import { AvatarBox, NavigationItem } from './molecules';
-import { LogoSearch, Navigation, Sidenav, SwitchButtons } from './organisms';
+import { Logo, Navigation, Sidenav, SwitchButtons } from './organisms';
 
 export {
   AvatarBox,
-  LogoSearch,
+  Logo,
   Navigation,
   NavigationItem,
   Sidenav,
+  SidenavToggle,
   SwitchButtons,
 };

@@ -20,4 +20,6 @@ type HeaderItem = {
 
 export type ListItem = LinkItem | HeaderItem;
 
-export type SidenavProps = {};
+export type SidenavProps = {
+  isOpen: boolean;
+};
