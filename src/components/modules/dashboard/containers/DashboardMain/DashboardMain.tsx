@@ -2,9 +2,8 @@ import { type FC } from 'react';
 import { Flex, Text } from '@chakra-ui/react';
 
 import { DashboardMainProps } from '../../types';
-import { SidenavToggle } from '../../../../ui';
 
-const DashboardMain: FC<DashboardMainProps> = ({ setIsSidenavOpen }) => {
+const DashboardMain: FC<DashboardMainProps> = () => {
   return (
     <Flex
       as='main'
@@ -17,7 +16,6 @@ const DashboardMain: FC<DashboardMainProps> = ({ setIsSidenavOpen }) => {
       position='relative'
       borderRadius='3xl'
     >
-      <SidenavToggle onClick={setIsSidenavOpen} />
       <Text fontSize={100} color='gray.300'>
         Main
       </Text>

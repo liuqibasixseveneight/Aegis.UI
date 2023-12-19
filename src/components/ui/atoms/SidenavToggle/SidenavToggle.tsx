@@ -1,23 +1,27 @@
 import { type FC } from 'react';
-import { IconButton } from '@chakra-ui/react';
+import { Box, IconButton } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 import { SidenavToggleProps } from './types';
 
-const SidenavToggle: FC<SidenavToggleProps> = ({ onClick }) => {
+const SidenavToggle: FC<SidenavToggleProps> = ({ isOpen, onClick }) => {
   return (
-    <IconButton
-      aria-label='Menu Collapse'
-      icon={<HamburgerIcon />}
-      position='absolute'
-      top={6}
-      left={6}
-      onClick={onClick}
-      _hover={{
-        background: 'gray.300',
-        borderColor: 'transparent',
-      }}
-    />
+    <Box
+      display='flex'
+      alignItems='center'
+      justifyContent={isOpen ? 'flex-end' : 'center'}
+    >
+      <IconButton
+        aria-label='Menu Collapse'
+        icon={<HamburgerIcon />}
+        justifyContent='center'
+        onClick={onClick}
+        _hover={{
+          background: 'gray.300',
+          borderColor: 'transparent',
+        }}
+      />
+    </Box>
   );
 };
 
