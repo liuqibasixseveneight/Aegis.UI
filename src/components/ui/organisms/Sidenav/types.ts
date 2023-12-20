@@ -22,4 +22,5 @@ export type ListItem = LinkItem | HeaderItem;
 
 export type SidenavProps = {
   isOpen: boolean;
+  setIsSidenavOpen: () => void;
 };

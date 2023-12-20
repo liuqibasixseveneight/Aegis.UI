@@ -10,13 +10,14 @@ const Dashboard: FC<DashboardProps> = () => {
 
   return (
     <HStack w='full' h='100vh' bg='gray.100' padding={10}>
-      <Sidenav isOpen={isSidenavOpen} />
-
-      <DashboardMain
+      <Sidenav
+        isOpen={isSidenavOpen}
         setIsSidenavOpen={() =>
           setIsSidenavOpen((isSidenavOpen) => !isSidenavOpen)
         }
       />
+
+      <DashboardMain />
     </HStack>
   );
 };
