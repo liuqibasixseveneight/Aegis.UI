@@ -5,49 +5,44 @@ import {
   ChatIcon,
   EmailIcon,
   InfoOutlineIcon,
-  PhoneIcon,
   RepeatClockIcon,
   SettingsIcon,
+  StarIcon,
 } from '@chakra-ui/icons';
 
 import { ListItem } from './types';
+import { ROUTES } from '../../../../config';
 
 export const listItems: ListItem[] = [
   {
     type: 'link',
     label: 'Dashboard',
     icon: AtSignIcon,
-    path: '/',
+    path: ROUTES?.DASHBOARD,
   },
   {
     type: 'link',
-    label: 'Products',
+    label: 'Incident',
     icon: InfoOutlineIcon,
-    path: '/',
+    path: ROUTES?.INCIDENT,
   },
   {
     type: 'link',
-    label: 'Mail',
+    label: 'Other Forms',
     icon: EmailIcon,
-    path: '/',
+    path: ROUTES?.['OTHER-FORMS'],
   },
   {
     type: 'link',
-    label: 'Campaigns',
+    label: 'Integrations',
     icon: RepeatClockIcon,
-    path: '/',
+    path: ROUTES?.INTEGRATIONS,
   },
   {
     type: 'link',
-    label: 'Calendar',
+    label: 'Patient List',
     icon: CalendarIcon,
-    path: '/',
-  },
-  {
-    type: 'link',
-    label: 'Contacts',
-    icon: PhoneIcon,
-    path: '/',
+    path: ROUTES?.['PATIENT-LIST'],
   },
   {
     type: 'header',
@@ -69,8 +64,14 @@ export const listItems: ListItem[] = [
   },
   {
     type: 'link',
+    label: 'Training',
+    icon: StarIcon,
+    path: ROUTES?.TRAINING,
+  },
+  {
+    type: 'link',
     label: 'Settings',
     icon: SettingsIcon,
-    path: '/',
+    path: ROUTES?.SETTINGS,
   },
 ];

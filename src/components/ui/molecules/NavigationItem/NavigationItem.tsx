@@ -25,7 +25,7 @@ const NavigationItem: FC<NavigationItemProps> = ({
     return (
       <Box display='flex' alignItems='center' my={6} justifyContent='center'>
         <ChakraLink
-          href={path}
+          to={path}
           as={Link}
           gap={1}
           display='flex'
