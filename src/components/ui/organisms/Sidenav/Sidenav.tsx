@@ -11,7 +11,7 @@ const Sidenav: FC<SidenavProps> = ({ isOpen, setIsSidenavOpen }) => {
       as='aside'
       w='full'
       h='full'
-      maxW={isOpen ? 350 : 100}
+      maxW={isOpen ? 300 : 100}
       bg='white'
       alignItems='center'
       padding={6}
