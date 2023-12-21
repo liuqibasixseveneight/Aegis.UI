@@ -1,23 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
-import styled from 'styled-components';
+import { Box } from '@chakra-ui/react';
 
-import { Dashboard, Home } from './components/modules';
-
-const Wrapper = styled.div`
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  min-width: 100vw;
-`;
+import { Dashboard, Home, Incident } from './components/modules';
 
 function App() {
   return (
-    <Wrapper>
+    <Box w='full' minW='100vw' h='full' minH='100vh' bg='gray.100'>
       <Routes>
         <Route path='/' Component={Home} />
         <Route path='/dashboard' Component={Dashboard} />
+        <Route path='/incident' Component={Incident} />
       </Routes>
-    </Wrapper>
+    </Box>
   );
 }
 

@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { Box, Divider, Flex } from '@chakra-ui/react';
 
 import { SidenavProps } from './types';
-import { AvatarBox, Logo, Navigation } from '../../../ui';
+import { AvatarBox, Logo, Navigation, SwitchButtons } from '../../../ui';
 import { listItems } from './listItems';
 
 const Sidenav: FC<SidenavProps> = ({ isOpen, setIsSidenavOpen }) => {
@@ -11,7 +11,7 @@ const Sidenav: FC<SidenavProps> = ({ isOpen, setIsSidenavOpen }) => {
       as='aside'
       w='full'
       h='full'
-      maxW={isOpen ? 350 : 100}
+      maxW={isOpen ? 300 : 100}
       bg='white'
       alignItems='center'
       padding={6}
@@ -23,6 +23,7 @@ const Sidenav: FC<SidenavProps> = ({ isOpen, setIsSidenavOpen }) => {
       <Box w='full'>
         <Logo isOpen={isOpen} onClick={setIsSidenavOpen} />
         <Divider py={3} />
+        <SwitchButtons isOpen={isOpen} isAdmin={false} />
         <Navigation listItems={listItems} isOpen={isOpen} />
       </Box>
 
