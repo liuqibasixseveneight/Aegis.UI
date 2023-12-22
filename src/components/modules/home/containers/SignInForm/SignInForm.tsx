@@ -30,9 +30,9 @@ const SignInForm: FC<SignInFormProps> = () => {
   return (
     <Stack spacing={4}>
       <VStack gap={6}>
-        <VStack as='header'>
+        <VStack as='header' pointerEvents='none'>
           <Box boxSize='sm' w='400px'>
-            <Image src={aegisLogo} alt='Aegis logo' borderRadius='xl' />
+            <Image src={aegisLogo} alt='Aegis logo' borderRadius='3xl' />
           </Box>
         </VStack>
 
@@ -41,7 +41,7 @@ const SignInForm: FC<SignInFormProps> = () => {
           variant='outline'
           borderColor='gray.100'
           w='400px'
-          borderRadius='xl'
+          borderRadius='3xl'
           padding={8}
         >
           <CardBody>
@@ -54,7 +54,7 @@ const SignInForm: FC<SignInFormProps> = () => {
                     bg='white'
                     borderColor='gray.100'
                     size='sm'
-                    borderRadius='xl'
+                    borderRadius='3xl'
                   />
                 </FormControl>
 
@@ -71,6 +71,8 @@ const SignInForm: FC<SignInFormProps> = () => {
                       variant='link'
                       size='xs'
                       fontWeight={500}
+                      color='blue.400'
+                      _hover={{ color: 'blue.700' }}
                     >
                       Forgot password?
                     </Button>
@@ -82,7 +84,7 @@ const SignInForm: FC<SignInFormProps> = () => {
                       bg='white'
                       borderColor='gray.100'
                       size='sm'
-                      borderRadius='xl'
+                      borderRadius='3xl'
                     />
                     <InputRightElement
                       onClick={() =>
@@ -91,14 +93,20 @@ const SignInForm: FC<SignInFormProps> = () => {
                         )
                       }
                       cursor='pointer'
-                      borderRadius='xl'
+                      borderRadius='3xl'
                     >
                       {isPasswordHidden ? <ViewOffIcon /> : <ViewIcon />}
                     </InputRightElement>
                   </InputGroup>
                 </FormControl>
 
-                <Button size='sm' as={Link} to={ROUTES?.DASHBOARD} mt={6}>
+                <Button
+                  size='sm'
+                  as={Link}
+                  to={ROUTES?.DASHBOARD}
+                  mt={6}
+                  _hover={{ color: 'blue.700' }}
+                >
                   Sign In
                 </Button>
               </Stack>
@@ -106,25 +114,22 @@ const SignInForm: FC<SignInFormProps> = () => {
           </CardBody>
         </Card>
 
-        <Card
-          variant='outline'
-          borderColor='gray.100'
-          borderRadius='xl'
-          w='400px'
-        >
-          <CardBody>
-            <Center>
-              <HStack fontSize='sm'>
-                <Text>
-                  Contact an administrator to{' '}
-                  <ChakraLink as={Link} isExternal to={ROUTES?.DASHBOARD}>
-                    create an account
-                  </ChakraLink>
-                </Text>
-              </HStack>
-            </Center>
-          </CardBody>
-        </Card>
+        <Center>
+          <HStack fontSize='sm'>
+            <Text>
+              Contact an administrator to{' '}
+              <ChakraLink
+                as={Link}
+                isExternal
+                to={ROUTES?.DASHBOARD}
+                color='blue.400'
+                _hover={{ color: 'blue.700' }}
+              >
+                create an account
+              </ChakraLink>
+            </Text>
+          </HStack>
+        </Center>
       </VStack>
     </Stack>
   );

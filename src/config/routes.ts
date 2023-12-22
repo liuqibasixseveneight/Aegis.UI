@@ -1,10 +1,10 @@
 export const ROUTES = {
   HOME: '/',
-  DASHBOARD: '/dashboard',
-  INCIDENT: '/incident',
-  'OTHER-FORMS': '/other-forms',
-  INTEGRATIONS: '/integrations',
-  'PATIENT-LIST': '/patient-list',
+  DASHBOARD: '/main/dashboard',
+  INCIDENT: '/main/incident',
+  'OTHER-FORMS': '/main/other-forms',
+  INTEGRATIONS: '/main/integrations',
+  'PATIENT-LIST': '/main/patient-list',
   TRAINING: '/training',
-  SETTINGS: '/settings',
+  SETTINGS: '/',
 };

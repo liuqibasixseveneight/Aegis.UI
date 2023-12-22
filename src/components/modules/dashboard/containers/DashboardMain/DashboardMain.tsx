@@ -17,7 +17,7 @@ const DashboardMain: FC<DashboardMainProps> = () => {
       borderRadius='3xl'
     >
       <Text fontSize={100} color='gray.300'>
-        Main
+        Dashboard
       </Text>
     </Flex>
   );
