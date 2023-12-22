@@ -1,9 +1,9 @@
 import { type FC } from 'react';
 import { Flex, Text } from '@chakra-ui/react';
 
-import { DashboardMainProps } from '../../types';
+import { OtherFormsMainProps } from '../../types';
 
-const DashboardMain: FC<DashboardMainProps> = () => {
+const OtherFormsMain: FC<OtherFormsMainProps> = () => {
   return (
     <Flex
       as='main'
@@ -17,10 +17,10 @@ const DashboardMain: FC<DashboardMainProps> = () => {
       borderRadius='3xl'
     >
       <Text fontSize={100} color='gray.300'>
-        Dashboard
+        Other Forms
       </Text>
     </Flex>
   );
 };
 
-export default DashboardMain;
+export default OtherFormsMain;

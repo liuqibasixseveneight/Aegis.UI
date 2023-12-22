@@ -34,6 +34,7 @@ const Logo: FC<LogoProps> = ({ isOpen, onClick }) => {
             label='Aegis | Version 2023-0.0.1'
             placement='bottom-end'
             aria-label='Aegis version number'
+            openDelay={500}
           >
             <Box display='flex' alignItems='center' gap={2}>
               <Icon as={AtSignIcon} fontSize={30} />
