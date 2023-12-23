@@ -15,7 +15,7 @@ const Navigation: FC<NavigationProps> = ({ listItems, isOpen }) => {
         <ListItem key={`${index}-${item?.label}`}>
           <NavigationItem
             item={item}
-            isActive={pathname === item?.path}
+            isActive={pathname === item?.path || pathname?.includes(item?.path)}
             isOpen={isOpen}
           />
         </ListItem>

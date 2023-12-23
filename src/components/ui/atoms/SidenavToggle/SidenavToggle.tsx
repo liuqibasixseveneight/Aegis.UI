@@ -12,6 +12,7 @@ const SidenavToggle: FC<SidenavToggleProps> = ({ isOpen, onClick }) => {
       justifyContent={isOpen ? 'flex-end' : 'center'}
     >
       <IconButton
+        borderRadius='3xl'
         aria-label='Menu Collapse'
         icon={<HamburgerIcon />}
         justifyContent='center'

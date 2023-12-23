@@ -1,7 +1,9 @@
 import { type FC } from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { IntegrationsMainProps } from '../../types';
+import { ModuleGrid } from '../../../../ui';
+import { gridItems } from './gridItems';
 
 const IntegrationsMain: FC<IntegrationsMainProps> = () => {
   return (
@@ -16,9 +18,7 @@ const IntegrationsMain: FC<IntegrationsMainProps> = () => {
       position='relative'
       borderRadius='3xl'
     >
-      <Text fontSize={100} color='gray.300'>
-        Integrations
-      </Text>
+      <ModuleGrid gridItems={gridItems} />
     </Flex>
   );
 };

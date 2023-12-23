@@ -46,20 +46,20 @@ export const listItems: ListItem[] = [
   },
   {
     type: 'header',
-    label: 'Account',
+    label: 'User',
   },
   {
     type: 'link',
     label: 'Notifications',
     icon: BellIcon,
-    path: '/',
+    path: ROUTES?.NOTIFICATIONS,
     notifications: 24,
   },
   {
     type: 'link',
     label: 'Chat',
     icon: ChatIcon,
-    path: '/',
+    path: ROUTES?.CHAT,
     messages: 8,
   },
   {
