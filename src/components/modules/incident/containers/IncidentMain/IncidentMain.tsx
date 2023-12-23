@@ -1,7 +1,9 @@
 import { type FC } from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { IncidentMainProps } from '../../types';
+import { ModuleGrid } from '../../../../ui';
+import { gridItems } from './gridItems';
 
 const IncidentMain: FC<IncidentMainProps> = () => {
   return (
@@ -16,9 +18,7 @@ const IncidentMain: FC<IncidentMainProps> = () => {
       position='relative'
       borderRadius='3xl'
     >
-      <Text fontSize={100} color='gray.300'>
-        Incident
-      </Text>
+      <ModuleGrid gridItems={gridItems} />
     </Flex>
   );
 };

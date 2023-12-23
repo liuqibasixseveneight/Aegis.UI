@@ -5,6 +5,8 @@ export const ROUTES = {
   'OTHER-FORMS': '/main/other-forms',
   INTEGRATIONS: '/main/integrations',
   'PATIENT-LIST': '/main/patient-list',
-  TRAINING: '/training',
-  SETTINGS: '/',
+  NOTIFICATIONS: '/user/notifications',
+  CHAT: '/user/chat',
+  TRAINING: '/user/training',
+  SETTINGS: '/user/settings',
 };

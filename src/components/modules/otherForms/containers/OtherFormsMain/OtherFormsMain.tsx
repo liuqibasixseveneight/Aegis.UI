@@ -1,7 +1,9 @@
 import { type FC } from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { OtherFormsMainProps } from '../../types';
+import { ModuleGrid } from '../../../../ui';
+import { gridItems } from './gridItems';
 
 const OtherFormsMain: FC<OtherFormsMainProps> = () => {
   return (
@@ -16,9 +18,7 @@ const OtherFormsMain: FC<OtherFormsMainProps> = () => {
       position='relative'
       borderRadius='3xl'
     >
-      <Text fontSize={100} color='gray.300'>
-        Other Forms
-      </Text>
+      <ModuleGrid gridItems={gridItems} />
     </Flex>
   );
 };
