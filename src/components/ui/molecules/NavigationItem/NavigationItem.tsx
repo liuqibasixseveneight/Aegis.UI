@@ -32,8 +32,8 @@ const NavigationItem: FC<NavigationItemProps> = ({
           alignItems='center'
           fontWeight='medium'
           w='full'
-          color={isActive ? 'black' : 'gray.400'}
-          _hover={{ textDecoration: 'none', color: 'black' }}
+          color={isActive ? 'blue.400' : 'gray.400'}
+          _hover={{ textDecoration: 'none', color: 'blue.700' }}
           justifyContent={isOpen ? '' : 'center'}
         >
           <Tooltip
