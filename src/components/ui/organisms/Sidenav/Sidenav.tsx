@@ -17,8 +17,8 @@ const Sidenav: FC<SidenavProps> = ({ isOpen, setIsSidenavOpen }) => {
       padding={6}
       flexDirection='column'
       justifyContent='space-between'
-      borderRadius='3xl'
       transition='ease-in-out 0.2s'
+      borderRadius='3xl'
     >
       <Box w='full'>
         <Logo isOpen={isOpen} onClick={setIsSidenavOpen} />

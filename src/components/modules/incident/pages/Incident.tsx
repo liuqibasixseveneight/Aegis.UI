@@ -6,7 +6,7 @@ import { IncidentMain } from '../containers';
 
 const Incident: FC<IncidentProps> = () => {
   return (
-    <HStack w='full' h='full' borderRadius='3xl'>
+    <HStack w='full' maxH='full'>
       <IncidentMain />
     </HStack>
   );

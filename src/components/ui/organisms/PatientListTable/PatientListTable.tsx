@@ -24,7 +24,7 @@ const getRowBackgroundColor = (status: 'red' | 'amber' | 'green') => {
 
 const PatientListTable: FC<PatientListTableProps> = ({ columns, data }) => {
   return (
-    <TableContainer w='full' h='full' borderRadius='3xl' overflowY='auto'>
+    <TableContainer w='full' h='full' overflowY='auto' padding={6}>
       <Table variant='simple'>
         <Thead>
           <Tr>
@@ -51,6 +51,7 @@ const PatientListTable: FC<PatientListTableProps> = ({ columns, data }) => {
                       colorScheme={row?.[column?.property]}
                       paddingY={1}
                       paddingX={2}
+                      borderRadius='3xl'
                     >
                       {row?.[column?.property]}
                     </Badge>

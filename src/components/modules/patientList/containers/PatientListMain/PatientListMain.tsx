@@ -1,28 +1,24 @@
-import { type FC } from 'react';
-import { Box, Flex } from '@chakra-ui/react';
+import { type FC, useState } from 'react';
 
 import { PatientListMainProps } from '../../types';
-import { PatientListTable } from '../../../../ui';
+import { ModulePage, PatientListTable } from '../../../../ui';
 import { listColumns } from './listColumns';
 import { listData } from './listData';
 
 const PatientListMain: FC<PatientListMainProps> = () => {
+  const [isPatientListIncoming, setIsPatientListIncoming] =
+    useState<boolean>(false);
+
   return (
-    <Flex
-      as='main'
-      w='full'
-      h='full'
-      bg='white'
-      alignItems='center'
-      justifyContent='center'
-      flexDirection='column'
-      position='relative'
-      borderRadius='3xl'
-    >
-      <Box w='full' h='full' padding={6}>
-        <PatientListTable columns={listColumns} data={listData} />
-      </Box>
-    </Flex>
+    <ModulePage
+      heading={{
+        title: 'Patient List',
+        subtitle: `A list of ${
+          isPatientListIncoming ? 'incoming' : 'currently active'
+        } Patients`,
+      }}
+      content={<PatientListTable columns={listColumns} data={listData} />}
+    />
   );
 };
 

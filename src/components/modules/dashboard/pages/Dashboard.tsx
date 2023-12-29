@@ -6,7 +6,7 @@ import { DashboardMain } from '../containers';
 
 const Dashboard: FC<DashboardProps> = () => {
   return (
-    <HStack w='full' h='full' borderRadius='3xl'>
+    <HStack w='full' h='full'>
       <DashboardMain />
     </HStack>
   );

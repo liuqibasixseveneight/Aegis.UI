@@ -1,25 +1,18 @@
 import { type FC } from 'react';
-import { Flex } from '@chakra-ui/react';
 
 import { IncidentMainProps } from '../../types';
-import { ModuleGrid } from '../../../../ui';
+import { ModuleGrid, ModulePage } from '../../../../ui';
 import { gridItems } from './gridItems';
 
 const IncidentMain: FC<IncidentMainProps> = () => {
   return (
-    <Flex
-      as='main'
-      w='full'
-      h='full'
-      bg='white'
-      alignItems='center'
-      justifyContent='center'
-      flexDirection='column'
-      position='relative'
-      borderRadius='3xl'
-    >
-      <ModuleGrid gridItems={gridItems} />
-    </Flex>
+    <ModulePage
+      heading={{
+        title: 'Incident',
+        subtitle: 'A collection of primary path forms',
+      }}
+      content={<ModuleGrid gridItems={gridItems} />}
+    />
   );
 };
 

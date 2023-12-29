@@ -7,6 +7,7 @@ export type GridItem = {
   displayName: string;
   icon: ReactElement | ComponentType<IconProps>;
   path: string;
+  page: ComponentType;
 };
 
 export type ModuleGridProps = {

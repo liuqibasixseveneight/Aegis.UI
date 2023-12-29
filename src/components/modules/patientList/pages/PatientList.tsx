@@ -6,7 +6,7 @@ import { PatientListMain } from '../containers';
 
 const PatientList: FC<PatientListProps> = () => {
   return (
-    <HStack w='full' h='full' borderRadius='3xl'>
+    <HStack h='full' w='full' overflowY='auto' paddingBottom={12}>
       <PatientListMain />
     </HStack>
   );
