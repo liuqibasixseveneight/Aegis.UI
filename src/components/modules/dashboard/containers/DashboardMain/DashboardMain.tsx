@@ -14,7 +14,6 @@ const DashboardMain: FC<DashboardMainProps> = () => {
       justifyContent='center'
       flexDirection='column'
       position='relative'
-      borderRadius='3xl'
     >
       <Text fontSize={100} color='gray.300'>
         Dashboard

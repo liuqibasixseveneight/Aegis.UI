@@ -7,13 +7,12 @@ import { ModuleGridItem } from '../../../ui';
 const ModuleGrid: FC<ModuleGridProps> = ({ gridItems }) => {
   return (
     <Grid
-      templateColumns={`repeat(auto-fill, 180px)`}
-      gap={6}
+      templateColumns={`repeat(auto-fill, 200px)`}
+      gap={8}
       justifyContent='center'
       p={6}
-      width='full'
-      height='full'
-      borderRadius='3xl'
+      w='full'
+      h='full'
       overflowY='auto'
       placeContent='flex-start'
     >

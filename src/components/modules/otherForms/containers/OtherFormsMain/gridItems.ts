@@ -1,6 +1,7 @@
 import { AtSignIcon } from '@chakra-ui/icons';
 
 import { GridItem } from '../../../../ui/organisms/ModuleGrid/types';
+import { CapacityToConsent, DiagnosisOfDeath } from '../../../../modules';
 
 export const gridItems: GridItem = [
   {
@@ -9,6 +10,7 @@ export const gridItems: GridItem = [
     displayName: 'Capacity to Consent',
     icon: AtSignIcon,
     path: '/main/other-forms/capacity-to-consent',
+    page: CapacityToConsent,
   },
   {
     id: '1',
@@ -16,5 +18,6 @@ export const gridItems: GridItem = [
     displayName: 'Diagnosis of Death',
     icon: AtSignIcon,
     path: '/main/other-forms/diagnosis-of-death',
+    page: DiagnosisOfDeath,
   },
 ];

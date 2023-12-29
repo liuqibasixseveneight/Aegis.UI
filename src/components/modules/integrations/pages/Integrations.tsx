@@ -6,7 +6,7 @@ import { IntegrationsMain } from '../containers';
 
 const Integrations: FC<IntegrationsProps> = () => {
   return (
-    <HStack w='full' h='full' borderRadius='3xl'>
+    <HStack w='full' maxH='full'>
       <IntegrationsMain />
     </HStack>
   );

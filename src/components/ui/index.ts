@@ -1,8 +1,9 @@
-import { SidenavToggle } from './atoms';
+import { PageBreadcrumb, PageHeading, SidenavToggle } from './atoms';
 import { AvatarBox, ModuleGridItem, NavigationItem } from './molecules';
 import {
   Logo,
   ModuleGrid,
+  ModulePage,
   Navigation,
   PatientListTable,
   Sidenav,
@@ -14,8 +15,11 @@ export {
   Logo,
   ModuleGrid,
   ModuleGridItem,
+  ModulePage,
   Navigation,
   NavigationItem,
+  PageBreadcrumb,
+  PageHeading,
   PatientListTable,
   Sidenav,
   SidenavToggle,

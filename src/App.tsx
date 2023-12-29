@@ -28,7 +28,10 @@ function App() {
             <Route
               key={`${incidentItem?.id}-${incidentItem?.displayName}`}
               path={incidentItem?.path}
-              element={<div>{incidentItem?.displayName}</div>}
+              Component={incidentItem?.page ? incidentItem?.page : null}
+              element={
+                !incidentItem?.page && <div>{incidentItem?.displayName}</div>
+              }
             />
           ))}
 
@@ -37,7 +40,12 @@ function App() {
             <Route
               key={`${otherFormsItem?.id}-${otherFormsItem?.displayName}`}
               path={otherFormsItem?.path}
-              element={<div>{otherFormsItem?.displayName}</div>}
+              Component={otherFormsItem?.page ? otherFormsItem?.page : null}
+              element={
+                !otherFormsItem?.page && (
+                  <div>{otherFormsItem?.displayName}</div>
+                )
+              }
             />
           ))}
 
@@ -46,7 +54,12 @@ function App() {
             <Route
               key={`${integrationsItem?.id}-${integrationsItem?.displayName}`}
               path={integrationsItem?.path}
-              element={<div>{integrationsItem?.displayName}</div>}
+              Component={integrationsItem?.page ? integrationsItem?.page : null}
+              element={
+                !integrationsItem?.page && (
+                  <div>{integrationsItem?.displayName}</div>
+                )
+              }
             />
           ))}
 

@@ -59,23 +59,31 @@ const NavigationItem: FC<NavigationItemProps> = ({
             {notifications && (
               <Badge
                 borderRadius='full'
-                colorScheme='yellow'
+                colorScheme='red'
                 w={6}
                 textAlign='center'
                 ml='auto'
+                display='flex'
+                alignItems='center'
+                justifyContent='center'
+                paddingX={4}
               >
-                {notifications}
+                {notifications > 10 ? '10+' : notifications}
               </Badge>
             )}
             {messages && (
               <Badge
                 borderRadius='full'
-                colorScheme='green'
+                colorScheme='red'
                 w={6}
                 textAlign='center'
                 ml='auto'
+                display='flex'
+                alignItems='center'
+                justifyContent='center'
+                paddingX={4}
               >
-                {messages}
+                {messages > 10 ? '10+' : messages}
               </Badge>
             )}
           </>

@@ -11,17 +11,17 @@ const ModuleGridItem: FC<ModuleGridItemProps> = ({ gridItem }) => {
     <Link to={path}>
       <Box
         key={id}
-        w='180px'
-        h='180px'
+        w='200px'
+        h='200px'
         bg='blue.300'
         display='flex'
         alignItems='center'
         justifyContent='center'
         color='white'
-        borderRadius='3xl'
         _hover={{ background: 'blue.500' }}
         transition='ease-in-out 0.2s'
         cursor='pointer'
+        borderRadius='3xl'
       >
         <VStack
           h='full'

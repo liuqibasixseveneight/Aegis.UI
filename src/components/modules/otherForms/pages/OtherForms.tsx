@@ -6,7 +6,7 @@ import { OtherFormsMain } from '../containers';
 
 const OtherForms: FC<OtherFormsProps> = () => {
   return (
-    <HStack w='full' h='full' borderRadius='3xl'>
+    <HStack w='full' maxH='full' overflowY='auto'>
       <OtherFormsMain />
     </HStack>
   );

@@ -34,7 +34,7 @@ export const gridItems: GridItem = [
   {
     id: '4',
     name: 'triageAndPathfinderSupport',
-    displayName: 'Triage and Pathfinder Support',
+    displayName: 'Triage And Pathfinder Support',
     icon: AtSignIcon,
     path: '/main/incident/triage-and-pathfinder-support',
   },
@@ -48,7 +48,7 @@ export const gridItems: GridItem = [
   {
     id: '6',
     name: 'communicationsConsentAndNotifications',
-    displayName: 'Communications, Consent & Notifications',
+    displayName: 'Communications, Consent And Notifications',
     icon: AtSignIcon,
     path: '/main/incident/communications-consent-and-notifications',
   },
@@ -69,7 +69,7 @@ export const gridItems: GridItem = [
   {
     id: '9',
     name: 'ivAccessAndMedications',
-    displayName: 'IV Access and Medications',
+    displayName: 'IV Access And Medications',
     icon: AtSignIcon,
     path: '/main/incident/iv-access-and-medications',
   },
@@ -83,7 +83,7 @@ export const gridItems: GridItem = [
   {
     id: '11',
     name: 'signAndSync',
-    displayName: 'Sign and Sync',
+    displayName: 'Sign And Sync',
     icon: AtSignIcon,
     path: '/main/incident/sign-and-sync',
   },
