@@ -1,14 +1,17 @@
 import { type FC } from 'react';
-import { HStack } from '@chakra-ui/react';
 
 import { DashboardProps } from '../types';
-import { DashboardMain } from '../containers';
+import { ModulePage } from '../../../ui';
 
 const Dashboard: FC<DashboardProps> = () => {
   return (
-    <HStack w='full' h='full'>
-      <DashboardMain />
-    </HStack>
+    <ModulePage
+      heading={{
+        title: 'Dashboard',
+        subtitle: 'Various modules used to monitor Patients within Aegis',
+      }}
+      content={null}
+    />
   );
 };
 

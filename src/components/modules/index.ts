@@ -7,6 +7,7 @@ import { Incident } from './incident';
 import { Integrations } from './integrations';
 import { OtherForms } from './otherForms';
 import { PatientList } from './patientList';
+import { Settings } from './settings';
 
 export {
   AegisUser,
@@ -18,4 +19,5 @@ export {
   Integrations,
   OtherForms,
   PatientList,
+  Settings,
 };

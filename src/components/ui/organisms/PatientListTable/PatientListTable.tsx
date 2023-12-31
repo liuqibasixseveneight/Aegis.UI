@@ -10,15 +10,15 @@ import {
   Tr,
 } from '@chakra-ui/react';
 
-import { PatientListTableProps } from './types';
+import { PatientListTableDataItem, PatientListTableProps } from './types';
 
 const getRowBackgroundColor = (status: 'red' | 'amber' | 'green') => {
   if (status === 'red') {
-    return 'rgba(254, 215, 215, 0.2)';
+    return 'rgba(254, 215, 215, 0.4)';
   } else if (status === 'amber') {
-    return 'rgba(255, 236, 179, 0.2)';
+    return 'rgba(255, 236, 179, 0.4)';
   } else if (status === 'green') {
-    return 'rgba(198, 246, 213, 0.2)';
+    return 'rgba(198, 246, 213, 0.4)';
   }
 };
 
@@ -36,7 +36,7 @@ const PatientListTable: FC<PatientListTableProps> = ({ columns, data }) => {
           </Tr>
         </Thead>
         <Tbody>
-          {data?.map((row) => (
+          {data?.map((row: PatientListTableDataItem) => (
             <Tr
               key={row?.id}
               _hover={{ background: getRowBackgroundColor(row?.status) }}
@@ -53,10 +53,10 @@ const PatientListTable: FC<PatientListTableProps> = ({ columns, data }) => {
                       paddingX={2}
                       borderRadius='3xl'
                     >
-                      {row?.[column?.property]}
+                      {row?.[column.property as keyof PatientListTableDataItem]}
                     </Badge>
                   ) : (
-                    row?.[column?.property]
+                    row?.[column.property as keyof PatientListTableDataItem]
                   )}
                 </Td>
               ))}

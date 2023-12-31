@@ -9,6 +9,7 @@ import {
   Integrations,
   OtherForms,
   PatientList,
+  Settings,
 } from './components/modules';
 import { gridItems as incidentItems } from './components/modules/incident/containers/IncidentMain/gridItems';
 import { gridItems as otherFormsItems } from './components/modules/otherForms/containers/OtherFormsMain/gridItems';
@@ -74,7 +75,7 @@ function App() {
           />
           <Route path='/user/chat' element={<div>Chat</div>} />
           <Route path='/user/training' element={<div>Training</div>} />
-          <Route path='/user/settings' element={<div>Settings</div>} />
+          <Route path='/user/settings' Component={Settings} />
         </Route>
       </Routes>
     </Box>

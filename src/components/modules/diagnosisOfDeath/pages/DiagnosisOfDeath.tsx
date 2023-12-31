@@ -10,6 +10,7 @@ const DiagnosisOfDeath: FC<DiagnosisOfDeathProps> = () => {
         title: 'Diagnosis Of Death',
         subtitle: "Document the findings of a Patient's death condition",
       }}
+      content={null}
     />
   );
 };
